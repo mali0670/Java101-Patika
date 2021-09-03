@@ -1,6 +1,7 @@
 # Java101-Patika Ödevleri
 
-<a href='#Ödev 1'>ÖDEV 1: Not Ortalaması</a><br><br><br>
+<a href='#Ödev 1'>ÖDEV 1: Not Ortalaması</a><br>
+<a href='#Ödev 2'>ÖDEV 2: Not Ortalaması</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -47,6 +48,54 @@ public class Main {
 
         boolean durum = ortalama >= 60;
         System.out.println("Sınıfı geçme durumunuz: " + (durum == true ? "Geçti" : "Kaldı"));
+    }
+}
+
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 2' > ÖDEV 2 - KDV Hesaplaması </p>
+
+### 2. Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran programı yazın.
+
+(Not : KDV tutarını 18% olarak alın)
+
+KDV'siz Fiyat = 10;
+
+KDV'li Fiyat = 11.8;
+
+KDV tutarı = 1.8;
+
+### -> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner((System.in));
+
+        double kdv1 = 0.18;
+        double kdv2 = 0.08;
+
+        System.out.print("Ürünün KDV'siz fiyatını girin:");
+        double anapara = scanner.nextDouble();
+
+        boolean kosul = anapara>=0 && anapara<=1000;
+
+        double kdv = (kosul) ? kdv1 : kdv2;
+        double kdvliFiyat = (anapara * kdv) + anapara;
+
+        System.out.println("Ürünün KDV'siz fiyatı: " + anapara + " TL" + "\nKDV tutarı: " + kdv + " TL" +
+                            "\nÜrünün KDV'li fiyatı: " + kdvliFiyat + " TL");
+
+
     }
 }
 
