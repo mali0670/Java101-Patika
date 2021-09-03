@@ -95,7 +95,6 @@ public class Main {
         System.out.println("Ürünün KDV'siz fiyatı: " + anapara + " TL" + "\nKDV tutarı: " + kdv + " TL" +
                             "\nÜrünün KDV'li fiyatı: " + kdvliFiyat + " TL");
 
-
     }
 }
 
