@@ -1,7 +1,7 @@
 # Java101-Patika Ödevleri
 
 <a href='#Ödev 1'>ÖDEV 1: Not Ortalaması</a><br>
-<a href='#Ödev 2'>ÖDEV 2: Not Ortalaması</a><br><br><br>
+<a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
