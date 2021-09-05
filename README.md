@@ -16,7 +16,7 @@
 
 ### <u> Not : If ve Else kullanılmayacak...
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
