@@ -2,7 +2,8 @@
 
 <a href='#Ödev 1'>ÖDEV 1: Not Ortalaması</a><br>
 <a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br>
-<a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br><br><br>
+<a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br>
+<a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -170,6 +171,47 @@ public class Main {
         double alan = u * (u - kenar1) * (u - kenar2) * (u - kenar3);
 
         System.out.println("Üçgenin çevresi: " + cevre + "\nÜçgenin alanı: " + alan);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 4' > ÖDEV 4 - Taksimetre Programı </p>
+
+### 2. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
+### -> Taksimetre KM başına 2.20 TL tutmaktadır.
+### -> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
+### -> Taksimetre açılış ücreti 10 TL'dir.
+
+### :green_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int km;
+        double perKm = 2.20, startPrice = 10, total;
+        Scanner scanner = new Scanner((System.in));
+
+        System.out.print("Mesafeyi gidilen km cinsinden yazın: ");
+        km=scanner.nextInt();
+
+        total = (km * perKm);
+        total += startPrice;
+
+        boolean con = (total < 20);
+        double check = (con) ? 20 : total;
+
+        System.out.println("Toplam tutar: " + check);
 
     }
 }
