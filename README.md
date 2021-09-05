@@ -102,3 +102,78 @@ public class Main {
 ```
 </details>
 <br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 2' > ÖDEV 2 - KDV Hesaplaması </p>
+
+### 2. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
+
+### :green_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner((System.in));
+
+        System.out.print("AB kenar uzunluğunu yazın: ");
+        int kenar1 = scanner.nextInt();
+
+        System.out.print("BC kenar uzunluğunu yazın: ");
+        int kenar2 = scanner.nextInt();
+
+        double hip = Math.sqrt((kenar1 * kenar1) + (kenar2 * kenar2));
+        System.out.println("Hipotenüz uzunluğu: " + hip);
+
+    }
+}
+```
+</details>
+<br>
+
+### -> Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
+### FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
+𝑢 = (a+b+c) / 2
+Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
+
+### :green_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner((System.in));
+
+        System.out.print("AB kenar uzunluğunu yazın: ");
+        int kenar1 = scanner.nextInt();
+
+        System.out.print("BC kenar uzunluğunu yazın: ");
+        int kenar2 = scanner.nextInt();
+
+        System.out.print("AC kenar uzunluğunu yazın: ");
+        int kenar3 = scanner.nextInt();
+
+        double u = (kenar1 + kenar2 + kenar3)/2;
+        double cevre = 2 * ((kenar1 + kenar2 + kenar3)/2);
+        double alan = u * (u - kenar1) * (u - kenar2) * (u - kenar3);
+
+        System.out.println("Üçgenin çevresi: " + cevre + "\nÜçgenin alanı: " + alan);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
