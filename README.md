@@ -5,7 +5,8 @@
 <a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br>
 <a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br>
 <a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a><br>
-<a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br><br><br>
+<a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br>
+<a href='#Ödev 7'>ÖDEV 7: Manav Kasa Programı</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -142,6 +143,7 @@ public class Main {
 <br>
 
 ### 2. Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
+
 ### FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
 𝑢 = (a+b+c) / 2
 Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
@@ -185,6 +187,7 @@ public class Main {
 ## <p id = 'Ödev 4' > ÖDEV 4 - Taksimetre Programı </p>
 
 ### 1. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
+
 ### -> Taksimetre KM başına 2.20 TL tutmaktadır.
 ### -> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
 ### -> Taksimetre açılış ücreti 10 TL'dir.
@@ -226,6 +229,7 @@ public class Main {
 ## <p id = 'Ödev 5' > ÖDEV 5 - Dairenin Alanını ve Çevresini Hesaplayan Program </p>
 
 ### 1. Java ile yarı çapını kullanıcıdan aldığınız dairenin alanını ve çevresini hesaplayan programı yazın.
+
 ### -> Alan Formülü : π * r * r;
 ### -> Çevre Formülü : 2 * π * r;
 
@@ -257,6 +261,7 @@ public class Main {
 <br>
 
 ### 2. Yarıçapı r, merkez açısısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
+
 ### -> 𝜋 sayısını = 3.14 alınız.
 ### -> Formül : (𝜋 * (r*r) * 𝛼) / 360
 
@@ -296,6 +301,7 @@ public class Main {
 ## <p id = 'Ödev 6' > ÖDEV 6 - Vücut Kitle İndeksi </p>
 
 ### 1. Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın. Aşağıda ki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp ekrana yazdırın.
+
 ### -> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
 
 <details>
@@ -318,6 +324,61 @@ public class Main {
         double sonuc = kilo / (boy * boy);
 
         System.out.println("Vücut kitle endeksiniz: " + sonuc);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 7' > ÖDEV 7 - Manav Kasa Programı </p>
+
+### 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
+
+### -> Meyveler ve KG Fiyatları
+### . Armut : 2,14 TL
+### . Elma : 3,67 TL
+### . Domates : 1,11 TL
+### . Muz: 0,95 TL
+### . Patlıcan : 5,00 TL
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double armut;
+        double elma;
+        double domates;
+        double muz;
+        double patlican;
+
+        Scanner scanner = new Scanner((System.in));
+
+        System.out.print("Armut kaç kilo?: ");
+        armut = scanner.nextDouble();
+
+        System.out.print("Elma kaç kilo?: ");
+        elma = scanner.nextDouble();
+
+        System.out.print("Domates kaç kilo?: ");
+        domates = scanner.nextDouble();
+
+        System.out.print("Muz kaç kilo?: ");
+        muz = scanner.nextDouble();
+
+        System.out.print("Patlıcan kaç kilo?: ");
+        patlican = scanner.nextDouble();
+
+        double toplamTutar = (armut * 2.14) + (elma * 3.67) + (domates * 1.11) + (muz * 0.95) + (patlican * 5);
+
+        System.out.println("Toplam tutar: " + toplamTutar);
 
     }
 }
