@@ -1,7 +1,8 @@
 # Java101-Patika Ödevleri
 
 <a href='#Ödev 1'>ÖDEV 1: Not Ortalaması</a><br>
-<a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br><br><br>
+<a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br>
+<a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -105,7 +106,7 @@ public class Main {
 
 ----------------------------------------------------------------------------------------------------
 
-## <p id = 'Ödev 2' > ÖDEV 2 - KDV Hesaplaması </p>
+## <p id = 'Ödev 3' > ÖDEV 3 - Üçgenin Hipotenüsü ve Alanı </p>
 
 ### 2. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
 
