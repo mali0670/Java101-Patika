@@ -3,7 +3,8 @@
 <a href='#Ödev 1'>ÖDEV 1: Not Ortalaması</a><br>
 <a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br>
 <a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br>
-<a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br><br><br>
+<a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br>
+<a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -60,7 +61,7 @@ public class Main {
 
 ## <p id = 'Ödev 2' > ÖDEV 2 - KDV Hesaplaması </p>
 
-### 2. Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran programı yazın.
+### 1. Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran programı yazın.
 
 (Not : KDV tutarını 18% olarak alın)
 
@@ -109,7 +110,7 @@ public class Main {
 
 ## <p id = 'Ödev 3' > ÖDEV 3 - Üçgenin Hipotenüsü ve Alanı </p>
 
-### 2. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
+### 1. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
 
 ### :green_square: CEVAP
 
@@ -139,7 +140,7 @@ public class Main {
 </details>
 <br>
 
-### -> Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
+### 2. Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
 ### FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
 𝑢 = (a+b+c) / 2
 Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
@@ -182,7 +183,7 @@ public class Main {
 
 ## <p id = 'Ödev 4' > ÖDEV 4 - Taksimetre Programı </p>
 
-### 2. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
+### 1. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
 ### -> Taksimetre KM başına 2.20 TL tutmaktadır.
 ### -> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
 ### -> Taksimetre açılış ücreti 10 TL'dir.
@@ -212,6 +213,76 @@ public class Main {
         double check = (con) ? 20 : total;
 
         System.out.println("Toplam tutar: " + check);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 5' > ÖDEV 5 - Dairenin Alanını ve Çevresini Hesaplayan Program </p>
+
+### 1. Java ile yarı çapını kullanıcıdan aldığınız dairenin alanını ve çevresini hesaplayan programı yazın.
+### -> Alan Formülü : π * r * r;
+### -> Çevre Formülü : 2 * π * r;
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner((System.in));
+
+        float pi = 3.14f;
+
+        System.out.print("Dairenin yarıçapını girin: ");
+        int yariCap = scanner.nextInt();
+
+        float cevre = 2 * pi * yariCap;
+        float alan = pi * yariCap * yariCap;
+
+        System.out.println("Dairenin çevresi: " + cevre + "\nDairenin alanı: " + alan);
+
+    }
+}
+```
+</details>
+<br>
+
+### 2. Yarıçapı r, merkez açısısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
+### -> 𝜋 sayısını = 3.14 alınız.
+### -> Formül : (𝜋 * (r*r) * 𝛼) / 360
+
+### :green_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner((System.in));
+
+        float pi = 3.14f;
+
+        System.out.print("Dairenin yarıçapını girin: ");
+        int yariCap = scanner.nextInt();
+
+        System.out.print("Merkez açısının ölçüsünü girin: ");
+        int aci = scanner.nextInt();
+
+        float dilim = (pi * (yariCap * yariCap) * aci) / 360;
+
+        System.out.println("Daire diliminin alanı: " + dilim);
 
     }
 }
