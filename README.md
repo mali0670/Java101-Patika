@@ -4,7 +4,8 @@
 <a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br>
 <a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br>
 <a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br>
-<a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a><br><br><br>
+<a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a>
+<a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -283,6 +284,40 @@ public class Main {
         float dilim = (pi * (yariCap * yariCap) * aci) / 360;
 
         System.out.println("Daire diliminin alanı: " + dilim);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 6' > ÖDEV 6 - Vücut Kitle İndeksi </p>
+
+### 1. Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın. Aşağıda ki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp ekrana yazdırın.
+### -> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner((System.in));
+
+        System.out.print("Lütfen boyunuzu (metre cinsinden) giriniz: ");
+        double boy = scanner.nextDouble();
+
+        System.out.print("Lütfen kilonuzu girin: ");
+        int kilo = scanner.nextInt();
+
+        double sonuc = kilo / (boy * boy);
+
+        System.out.println("Vücut kitle endeksiniz: " + sonuc);
 
     }
 }
