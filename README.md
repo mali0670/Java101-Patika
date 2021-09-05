@@ -75,7 +75,7 @@ KDV tutarı = 1.8;
 
 ### -> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
@@ -114,7 +114,7 @@ public class Main {
 
 ### 1. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
@@ -148,7 +148,7 @@ public class Main {
 𝑢 = (a+b+c) / 2
 Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
@@ -192,7 +192,7 @@ public class Main {
 ### -> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
 ### -> Taksimetre açılış ücreti 10 TL'dir.
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
@@ -233,6 +233,8 @@ public class Main {
 ### -> Alan Formülü : π * r * r;
 ### -> Çevre Formülü : 2 * π * r;
 
+### :red_square: CEVAP
+
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
 
@@ -265,7 +267,7 @@ public class Main {
 ### -> 𝜋 sayısını = 3.14 alınız.
 ### -> Formül : (𝜋 * (r*r) * 𝛼) / 360
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
@@ -304,7 +306,7 @@ public class Main {
 
 ### -> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
@@ -346,7 +348,7 @@ public class Main {
 ### . Muz: 0,95 TL
 ### . Patlıcan : 5,00 TL
 
-### :green_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
