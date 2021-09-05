@@ -4,7 +4,7 @@
 <a href='#Ödev 2'>ÖDEV 2: KDV Hesaplaması</a><br>
 <a href='#Ödev 3'>ÖDEV 3: Üçgenin Hipotenüsü ve Alanı</a><br>
 <a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br>
-<a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a>
+<a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a><br>
 <a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
