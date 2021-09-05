@@ -304,6 +304,8 @@ public class Main {
 
 ### -> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
 
+### :green_square: CEVAP
+
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
 
@@ -343,6 +345,8 @@ public class Main {
 ### . Domates : 1,11 TL
 ### . Muz: 0,95 TL
 ### . Patlıcan : 5,00 TL
+
+### :green_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
