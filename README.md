@@ -6,7 +6,8 @@
 <a href='#Ödev 4'>ÖDEV 4: Taksimetre Programı</a><br>
 <a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a><br>
 <a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br>
-<a href='#Ödev 7'>ÖDEV 7: Manav Kasa Programı</a><br><br><br>
+<a href='#Ödev 7'>ÖDEV 7: Manav Kasa Programı</a><br>
+<a href='#Ödev 8'>ÖDEV 8: Basit Hesap Makinesi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -385,6 +386,67 @@ public class Main {
         double toplamTutar = (armut * 2.14) + (elma * 3.67) + (domates * 1.11) + (muz * 0.95) + (patlican * 5);
 
         System.out.println("Toplam tutar: " + toplamTutar);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 8' > ÖDEV 8 - Basit Hesap Makinesi </p>
+
+### 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
+
+### -> Videodaki hesap makinesini switch-case kullanarak yapınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a,b,select;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Birinci sayıyı girin: ");
+        a = scanner.nextInt();
+
+        System.out.print("İkinci sayıyı girin: ");
+        b = scanner.nextInt();
+
+        System.out.println("1- Topla\n2- Çıkar\n3- Çarp\n4- Böl");
+        System.out.print("İşlem tipini seçin:");
+        select = scanner.nextInt();
+
+        switch (select){
+            case 1:
+                System.out.println("Sonuç: " + (a + b));
+                break;
+            case 2:
+                System.out.println("Sonuç: " + (a - b));
+                break;
+            case 3:
+                System.out.println("Sonuç: " + (a * b));
+                break;
+            case 4:
+                if (b != 0) {
+                    System.out.println("Sonuç: " + (a / b));
+                    break;
+                }else {
+                    System.out.println("Bir sayı 0'a bölünemez!!!");
+                    break;
+                }
+            default:
+                System.out.println("Hatalı seçim yaptınız!");
+        }
 
     }
 }
