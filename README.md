@@ -9,7 +9,8 @@
 <a href='#Ödev 7'>ÖDEV 7: Manav Kasa Programı</a><br>
 <a href='#Ödev 8'>ÖDEV 8: Basit Hesap Makinesi</a><br>
 <a href='#Ödev 9'>ÖDEV 9: Kullanıcı Girişi</a><br>
-<a href='#Ödev 10'>ÖDEV 10: Sınıf Geçme Durumu</a><br><br><br>
+<a href='#Ödev 10'>ÖDEV 10: Sınıf Geçme Durumu</a><br>
+<a href='#Ödev 11'>ÖDEV 11: Hava Sıcaklığına Göre Etkinlik Planlama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -586,6 +587,79 @@ public class Main {
         }
 
         System.out.println("Ortalamanız: " + avarage);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 11' > ÖDEV 11 - Hava Sıcaklığına Göre Etkinlik Planlama </p>
+
+### 1. Java koşullu ifadeler ile hava sıcaklığına göre etkinlik öneren program yapımı.
+
+### -> Koşullar :
+### . Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
+### . Sıcaklık 5 ve 15 arasında ise "Sinema" etkinliğini öner.
+### . Sıcaklık 15 ve 25 arasında ise "Piknik" etkinliğini öner.
+### . Sıcaklık 25'ten büyük ise "Yüzme" etkinliğini öner.
+
+### -> Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int temp;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("IF İLE YAPIM:");
+
+        System.out.print("Hava sıcaklığını girin: ");
+        temp = scanner.nextInt();
+
+        if (temp<5){
+            System.out.println("Kayak yapabilirsiniz");
+        }else if (temp>=5 && temp<=25){
+            if (temp<=15){
+                System.out.println("Sinemaya gidebilirsiniz");
+            }if (temp>=10){
+                System.out.println("Pikniğe gidebilirsiniz");
+            }
+        }else{
+            System.out.println("Yüzmeye gidebilirsiniz");
+        }
+
+        System.out.println("BOOLEAN İLE YAPIM:");
+
+        System.out.print("Sıcaklık değerini girin: ");
+        temp = scanner.nextInt();
+
+        String alt;
+
+        boolean kosul1 = temp<5;
+        boolean kosul2 = temp>=5 && temp<10;
+        boolean kosul3 = temp<=15;
+        boolean kosul4 = temp>=15 && temp<=25;
+        boolean kosul5 = temp>25;
+
+        alt = kosul1 ? "Kayak yapabilirsin":
+              kosul2 ? "Sinemaya gidebilirsin":
+              kosul3 ? "Pikniğe gidebilirsin" + "\tSinemaya gidebilirsin":
+              kosul4 ? "Pikniğe gidebilirsin":
+                       "Yüzmeye gidebilirsin";
+
+        System.out.println(alt);
 
     }
 }
