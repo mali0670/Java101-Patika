@@ -8,7 +8,8 @@
 <a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br>
 <a href='#Ödev 7'>ÖDEV 7: Manav Kasa Programı</a><br>
 <a href='#Ödev 8'>ÖDEV 8: Basit Hesap Makinesi</a><br>
-<a href='#Ödev 9'>ÖDEV 9: Kullanıcı Girişi</a><br><br><br>
+<a href='#Ödev 9'>ÖDEV 9: Kullanıcı Girişi</a><br>
+<a href='#Ödev 10'>ÖDEV 10: Sınıf Geçme Durumu</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -506,6 +507,85 @@ public class Main {
                     System.out.println("Hatalı tuşlama yaptınız!");
                 }
         }
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 10' > ÖDEV 10 - Sınıf Geçme Durumu </p>
+
+### 1. Java koşullu ifadeler ile kullanıcının not durumuna göre sınıfı geçme durumunu hesaplayan program yapımı.
+### <b>Dersler:</b> Matematik, Fizik, Türkçe, Kimya, Müzik
+### <b>Geçme Notu:</b> 55
+
+### -> Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int mat, fiz, tur, kim, muz;
+        int dersler = 5;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Matematik notunuzu girin: ");
+        mat = scanner.nextInt();
+
+        System.out.print("Fizik notunuzu girin: ");
+        fiz = scanner.nextInt();
+
+        System.out.print("Türkçe notunuzu girin: ");
+        tur = scanner.nextInt();
+
+        System.out.print("Kimya notunuzu girin: ");
+        kim = scanner.nextInt();
+
+        System.out.print("Müzik notunuzu girin: ");
+        muz = scanner.nextInt();
+
+        if (mat<0 || mat>100){
+            mat=0;
+            dersler--;
+        }
+        if (fiz<0 || fiz>100){
+            fiz=0;
+            dersler--;
+        }
+        if (tur<0 || tur>100){
+            tur=0;
+            dersler--;
+        }
+        if (kim<0 || kim>100){
+            kim=0;
+            dersler--;
+        }
+        if (muz<0 || muz>100){
+            muz=0;
+            dersler--;
+        }
+
+        double avarage = (mat + fiz + tur + kim + muz) / dersler;
+
+        if (avarage<55){
+            System.out.println("Sınıfta kaldınız");
+
+        }else {
+            System.out.println("Tebrikler! Sınıfı geçtiniz");
+        }
+
+        System.out.println("Ortalamanız: " + avarage);
 
     }
 }
