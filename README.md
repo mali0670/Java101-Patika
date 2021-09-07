@@ -19,7 +19,7 @@
 
 1. Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
 
--> Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
+    -> Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
 
 Not : If ve Else kullanılmayacak...
 
@@ -74,11 +74,11 @@ public class Main {
 
 (Not : KDV tutarını 18% olarak alın)
 
-KDV'siz Fiyat = 10;
-KDV'li Fiyat = 11.8;
-KDV tutarı = 1.8;
+- KDV'siz Fiyat = 10;
+- KDV'li Fiyat = 11.8;
+- KDV tutarı = 1.8;
 
--> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
+    -> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
 
 ### :red_square: CEVAP
 
@@ -149,9 +149,9 @@ public class Main {
 
 2. Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
 
-FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
-𝑢 = (a+b+c) / 2
-Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
+- FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
+- 𝑢 = (a+b+c) / 2
+- Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
 
 ### :red_square: CEVAP
 
@@ -193,9 +193,9 @@ public class Main {
 
 1. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
 
--> Taksimetre KM başına 2.20 TL tutmaktadır.
--> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
--> Taksimetre açılış ücreti 10 TL'dir.
+    -> Taksimetre KM başına 2.20 TL tutmaktadır.
+    -> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
+    -> Taksimetre açılış ücreti 10 TL'dir.
 
 ### :red_square: CEVAP
 
@@ -235,8 +235,8 @@ public class Main {
 
 1. Java ile yarı çapını kullanıcıdan aldığınız dairenin alanını ve çevresini hesaplayan programı yazın.
 
--> Alan Formülü : π * r * r;
--> Çevre Formülü : 2 * π * r;
+- Alan Formülü : π * r * r;
+- Çevre Formülü : 2 * π * r;
 
 ### :red_square: CEVAP
 
@@ -269,8 +269,8 @@ public class Main {
 
 2. Yarıçapı r, merkez açısısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
 
--> 𝜋 sayısını = 3.14 alınız.
--> Formül : (𝜋 * (r*r) * 𝛼) / 360
+- 𝜋 sayısını = 3.14 alınız.
+- Formül : (𝜋 * (r*r) * 𝛼) / 360
 
 ### :red_square: CEVAP
 
@@ -309,7 +309,7 @@ public class Main {
 
 1. Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın. Aşağıda ki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp ekrana yazdırın.
 
--> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
+- FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
 
 ### :red_square: CEVAP
 
@@ -346,7 +346,7 @@ public class Main {
 
 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
 
--> Meyveler ve KG Fiyatları
+    -> Meyveler ve KG Fiyatları
 - Armut : 2,14 TL
 - Elma : 3,67 TL
 - Domates : 1,11 TL
@@ -403,7 +403,7 @@ public class Main {
 
 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
 
--> Videodaki hesap makinesini switch-case kullanarak yapınız.
+    -> Videodaki hesap makinesini switch-case kullanarak yapınız.
 
 ### :red_square: CEVAP
 
@@ -464,7 +464,7 @@ public class Main {
 
 1. Java koşullu ifadeler ile kullanıcı adı ve şifreyi kontrol eden program yapımı.
 
--> Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+    -> Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
 
 ### :red_square: CEVAP
 
@@ -525,7 +525,7 @@ public class Main {
 Dersler: Matematik, Fizik, Türkçe, Kimya, Müzik
 Geçme Notu: 55
 
--> Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
+    -> Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
 
 ### :red_square: CEVAP
 
@@ -602,13 +602,13 @@ public class Main {
 
 1. Java koşullu ifadeler ile hava sıcaklığına göre etkinlik öneren program yapımı.
 
--> Koşullar :
+    -> Koşullar :
 - Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
 - Sıcaklık 5 ve 15 arasında ise "Sinema" etkinliğini öner.
 - Sıcaklık 15 ve 25 arasında ise "Piknik" etkinliğini öner.
 - Sıcaklık 25'ten büyük ise "Yüzme" etkinliğini öner.
 
--> Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
+    -> Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
 
 ### :red_square: CEVAP
 
@@ -675,7 +675,7 @@ public class Main {
 
 1. Java koşullu ifadeler ile girilen 3 sayıyı büyükten küçüğe sıralayan program yapımı.
 
--> Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
+    -> Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
 
 ### :red_square: CEVAP
 
@@ -770,7 +770,7 @@ public class Main {
 - Kova Burcu : 22 Ocak - 19 Şubat
 - Balık Burcu : 20 Şubat - 20 Mart
 
--> Aynı örneği switch-case kullanmadan yapınız.
+    -> Aynı örneği switch-case kullanmadan yapınız.
 
 ### :red_square: CEVAP
 
@@ -1087,7 +1087,7 @@ public class Main {
 
 - Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
 
-:red_square: CEVAP
+### :red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
