@@ -12,7 +12,8 @@
 <a href='#Ödev 10'>ÖDEV 10: Sınıf Geçme Durumu</a><br>
 <a href='#Ödev 11'>ÖDEV 11: Hava Sıcaklığına Göre Etkinlik Planlama</a><br>
 <a href='#Ödev 12'>ÖDEV 12: Sayıları Küçükten Büyüğe Sıralama</a><br>
-<a href='#Ödev 13'>ÖDEV 13: Burç Bulma Programı</a><br><br><br>
+<a href='#Ödev 13'>ÖDEV 13: Burç Bulma Programı</a><br>
+<a href='#Ödev 14'>ÖDEV 14: Uçak Bilet Fiyatı Hesaplama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1063,6 +1064,101 @@ public class Main {
             }else {
                 System.out.println("Geçersiz bir giriş yaptınız!");
             }
+        }
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 14' > ÖDEV 14 - Uçak Bilet Fiyatı Hesaplama </p>
+
+### 1. Java ile mesafeye ve şartlara göre uçak bileti fiyatı hesaplayan programı yapın. Kullanıcıdan Mesafe (KM), yaşı ve yolculuk tipi (Tek Yön, Gidiş-Dönüş) bilgilerini alın. Mesafe başına ücret 0,10 TL / km olarak alın. İlk olarak uçuşun toplam fiyatını hesaplayın ve sonrasında ki koşullara göre müşteriye aşağıdaki indirimleri uygulayın ;
+
+## -> Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır. Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
+
+### . Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
+
+### . Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
+
+### . Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
+
+### . Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double mesafeBasiUcret = 0.10;
+        int mesafe, yas;
+        int tip;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Lütfen yaşınızı girin: ");
+        yas = scanner.nextInt();
+
+        System.out.print("Gideceğiniz mesafeyi km cinsinden girin: ");
+        mesafe = scanner.nextInt();
+
+        System.out.println("Yolculuk tipini seçin: 1=> Tek yön, 2=> Gidiş-dönüş");
+        tip = scanner.nextInt();
+
+        double normalTutar = mesafe * mesafeBasiUcret;
+
+        double yasIndirimi12 = normalTutar * 0.5;
+        double yasIndirimi1224 = normalTutar * 0.1;
+        double yasIndirimi65 = normalTutar * 0.3;
+
+        double indirimliTutar1 = normalTutar - yasIndirimi12;
+        double indirimliTutar2 = normalTutar - yasIndirimi1224;
+        double indirimliTutar3 = normalTutar - yasIndirimi65;
+
+        double gidisDonusIndirim1 = indirimliTutar1 * 0.2;
+        double gidisDonusIndirim2 = indirimliTutar2 * 0.2;
+        double gidisDonusIndirim3 = indirimliTutar3 * 0.2;
+
+        double toplamTutar1 = 2 * (indirimliTutar1 - gidisDonusIndirim1);
+        double toplamTutar2 = 2 * (indirimliTutar2 - gidisDonusIndirim2);
+        double toplamTutar3 = 2 * (indirimliTutar3 - gidisDonusIndirim3);
+
+        switch (tip){
+            case 1:
+                if (yas<12){
+                    System.out.println("Toplam Tutar: " + toplamTutar1);
+                }else  if (yas >=12 && yas <=24){
+                    System.out.println("Toplam Tutar: " + toplamTutar2);
+                }else if (yas>24 && yas<65){
+                    System.out.println("Toplam Tutar: " + normalTutar);
+                }else {
+                    System.out.println("Toplam Tutar: " + toplamTutar3);
+                }
+                break;
+
+            case 2:
+                if (yas<12){
+                    System.out.println("Toplam Tutar: " + toplamTutar1);
+                }else if (yas>=12 && yas<=24){
+                    System.out.println("Toplam Tutar: " + toplamTutar2);
+                }else if (yas>24 && yas<65){
+                    System.out.println("Toplam Tutar: " + normalTutar * 2);
+                }else {
+                    System.out.println("Toplam Tutar: " + toplamTutar3);
+                }
+                break;
+
+            default:
+                System.out.println("Hatalı seçim yaptınız!");
         }
 
     }
