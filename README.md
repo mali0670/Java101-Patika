@@ -519,8 +519,8 @@ public class Main {
 ## <p id = 'Ödev 10' > ÖDEV 10 - Sınıf Geçme Durumu </p>
 
 ### 1. Java koşullu ifadeler ile kullanıcının not durumuna göre sınıfı geçme durumunu hesaplayan program yapımı.
-### <b>Dersler:</b> Matematik, Fizik, Türkçe, Kimya, Müzik
-### <b>Geçme Notu:</b> 55
+### Dersler: Matematik, Fizik, Türkçe, Kimya, Müzik
+### Geçme Notu: 55
 
 ### -> Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
 
