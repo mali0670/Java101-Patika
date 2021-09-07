@@ -75,9 +75,7 @@ public class Main {
 (Not : KDV tutarını 18% olarak alın)
 
 KDV'siz Fiyat = 10;
-
 KDV'li Fiyat = 11.8;
-
 KDV tutarı = 1.8;
 
 ### -> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
@@ -349,11 +347,11 @@ public class Main {
 ### 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
 
 ### -> Meyveler ve KG Fiyatları
-### . Armut : 2,14 TL
-### . Elma : 3,67 TL
-### . Domates : 1,11 TL
-### . Muz: 0,95 TL
-### . Patlıcan : 5,00 TL
+- Armut : 2,14 TL
+- Elma : 3,67 TL
+- Domates : 1,11 TL
+- Muz: 0,95 TL
+- Patlıcan : 5,00 TL
 
 ### :red_square: CEVAP
 
@@ -604,10 +602,10 @@ public class Main {
 ### 1. Java koşullu ifadeler ile hava sıcaklığına göre etkinlik öneren program yapımı.
 
 ### -> Koşullar :
-### . Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
-### . Sıcaklık 5 ve 15 arasında ise "Sinema" etkinliğini öner.
-### . Sıcaklık 15 ve 25 arasında ise "Piknik" etkinliğini öner.
-### . Sıcaklık 25'ten büyük ise "Yüzme" etkinliğini öner.
+- Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
+- Sıcaklık 5 ve 15 arasında ise "Sinema" etkinliğini öner.
+- Sıcaklık 15 ve 25 arasında ise "Piknik" etkinliğini öner.
+- Sıcaklık 25'ten büyük ise "Yüzme" etkinliğini öner.
 
 ### -> Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
 
@@ -758,18 +756,18 @@ public class Main {
 
 ### 1. Java koşullu ifadeler ile kullanıcının burcunu bulan program yapımı.
 
-### . Koç Burcu : 21 Mart - 20 Nisan
-### . Boğa Burcu : 21 Nisan - 21 Mayıs
-### . İkizler Burcu : 22 Mayıs - 22 Haziran
-### . Yengeç Burcu : 23 Haziran - 22 Temmuz
-### . Aslan Burcu : 23 Temmuz - 22 Ağustos
-### . Başak Burcu : 23 Ağustos - 22 Eylül
-### . Terazi Burcu : 23 Eylül - 22 Ekim
-### . Akrep Burcu : 23 Ekim - 21 Kasım
-### . Yay Burcu : 22 Kasım - 21 Aralık
-### . Oğlak Burcu : 22 Aralık - 21 Ocak
-### . Kova Burcu : 22 Ocak - 19 Şubat
-### . Balık Burcu : 20 Şubat - 20 Mart
+- Koç Burcu : 21 Mart - 20 Nisan
+- Boğa Burcu : 21 Nisan - 21 Mayıs
+- İkizler Burcu : 22 Mayıs - 22 Haziran
+- Yengeç Burcu : 23 Haziran - 22 Temmuz
+- Aslan Burcu : 23 Temmuz - 22 Ağustos
+- Başak Burcu : 23 Ağustos - 22 Eylül
+- Terazi Burcu : 23 Eylül - 22 Ekim
+- Akrep Burcu : 23 Ekim - 21 Kasım
+- Yay Burcu : 22 Kasım - 21 Aralık
+- Oğlak Burcu : 22 Aralık - 21 Ocak
+- Kova Burcu : 22 Ocak - 19 Şubat
+- Balık Burcu : 20 Şubat - 20 Mart
 
 ### -> Aynı örneği switch-case kullanmadan yapınız.
 
@@ -1080,13 +1078,13 @@ public class Main {
 
 ## -> Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır. Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
 
-### . Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
+- Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
 
-### . Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
+- Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
 
-### . Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
+- Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
 
-### . Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
+- Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
 
 ### :red_square: CEVAP
 
