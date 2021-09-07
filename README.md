@@ -10,7 +10,8 @@
 <a href='#Ödev 8'>ÖDEV 8: Basit Hesap Makinesi</a><br>
 <a href='#Ödev 9'>ÖDEV 9: Kullanıcı Girişi</a><br>
 <a href='#Ödev 10'>ÖDEV 10: Sınıf Geçme Durumu</a><br>
-<a href='#Ödev 11'>ÖDEV 11: Hava Sıcaklığına Göre Etkinlik Planlama</a><br><br><br>
+<a href='#Ödev 11'>ÖDEV 11: Hava Sıcaklığına Göre Etkinlik Planlama</a><br>
+<a href='#Ödev 12'>ÖDEV 12: Sayıları Küçükten Büyüğe Sıralama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -660,6 +661,88 @@ public class Main {
                        "Yüzmeye gidebilirsin";
 
         System.out.println(alt);
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 12' > ÖDEV 12 - Sayıları Küçükten Büyüğe Sıralama </p>
+
+### 1. Java koşullu ifadeler ile girilen 3 sayıyı büyükten küçüğe sıralayan program yapımı.
+
+### -> Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a,b,c;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Birinci sayıyı girin: ");
+        a = scanner.nextInt();
+
+        System.out.print("İkinci sayıyı girin: ");
+        b = scanner.nextInt();
+
+        System.out.print("Üçüncü sayıyı girin: ");
+        c = scanner.nextInt();
+
+        System.out.println("SAYILARI BÜYÜKTEN KÜÇÜĞE SIRALAMA:");
+
+        if ((a > b) && (a > c)){
+            if (b > c){
+                System.out.println("a > b > c");
+            }else {
+                System.out.println("a > c > b");
+            }
+        }else if ((b > a) && (b > c)){
+            if (a > c){
+                System.out.println("b > a > c");
+            }else {
+                System.out.println("b > c > a");
+            }
+        }else {
+            if (a > b){
+                System.out.println("c > a > b");
+            }else {
+                System.out.println("c > b > a");
+            }
+        }
+
+        System.out.println("SAYILARI KÜÇÜKTEN BÜYÜĞE SIRALAMA:");
+
+        if ((a < b) && (a < c)){
+            if (b < c){
+                System.out.println("a < b < c");
+            }else {
+                System.out.println("a < c < b");
+            }
+        }else if ((b < a) && (b < c)){
+            if (a < c){
+                System.out.println("b < a < c");
+            }else {
+                System.out.println("b < c < a");
+            }
+        }else {
+            if (a < b){
+                System.out.println("c < a < b");
+            }else {
+                System.out.println("c < b < a");
+            }
+        }
 
     }
 }
