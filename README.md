@@ -7,7 +7,8 @@
 <a href='#Ödev 5'>ÖDEV 5: Dairenin Alanını ve Çevresini Hesaplayan Program</a><br>
 <a href='#Ödev 6'>ÖDEV 6: Vücut Kitle İndeksi</a><br>
 <a href='#Ödev 7'>ÖDEV 7: Manav Kasa Programı</a><br>
-<a href='#Ödev 8'>ÖDEV 8: Basit Hesap Makinesi</a><br><br><br>
+<a href='#Ödev 8'>ÖDEV 8: Basit Hesap Makinesi</a><br>
+<a href='#Ödev 9'>ÖDEV 9: Kullanıcı Girişi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -446,6 +447,64 @@ public class Main {
                 }
             default:
                 System.out.println("Hatalı seçim yaptınız!");
+        }
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 9' > ÖDEV 9 - Kullanıcı Girişi </p>
+
+### 1. Java koşullu ifadeler ile kullanıcı adı ve şifreyi kontrol eden program yapımı.
+
+### -> Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String userName, password;
+        String changePassword;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Kullanıcı adınızı girin: ");
+        userName = scanner.nextLine();
+
+        System.out.print("Şifrenizi girin: ");
+        password = scanner.nextLine();
+
+        if (userName.equals("patika") && password.equals("java123")){
+            System.out.println("Giriş başarılı");
+        }
+        else{
+            System.out.println("Kullanıcı adı ya da şifre hatalı.");
+            System.out.println("Şifrenizi sıfırlamak ister misiniz? E/H");
+            changePassword = scanner.nextLine();
+                if (changePassword.equals("E")){
+                    System.out.print("Lütfen yeni şifrenizi girin: ");
+                    changePassword = scanner.nextLine();
+                        if (changePassword.equals(password) || changePassword.equals("java123")){
+                            System.out.println("Yeni şifreniz eski şifrenizden farklı olmalıdır!");
+                        }else {
+                            System.out.println("Şifreniz başarılı bir şekilde değiştirilmiştir.");
+                        }
+                }else if (changePassword.equals("H")){
+                    System.out.println("Şifre değişikliği işlemi iptal edildi");
+                }else {
+                    System.out.println("Hatalı tuşlama yaptınız!");
+                }
         }
 
     }
