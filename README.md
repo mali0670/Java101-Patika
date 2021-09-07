@@ -17,11 +17,11 @@
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
-### 1. Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
+1. Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
 
-### -> Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
+-> Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
 
-### <u> Not : If ve Else kullanılmayacak...
+Not : If ve Else kullanılmayacak...
 
 ### :red_square: CEVAP
 
@@ -70,7 +70,7 @@ public class Main {
 
 ## <p id = 'Ödev 2' > ÖDEV 2 - KDV Hesaplaması </p>
 
-### 1. Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran programı yazın.
+1. Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran programı yazın.
 
 (Not : KDV tutarını 18% olarak alın)
 
@@ -78,7 +78,7 @@ KDV'siz Fiyat = 10;
 KDV'li Fiyat = 11.8;
 KDV tutarı = 1.8;
 
-### -> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
+-> Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplayan programı yazınız.
 
 ### :red_square: CEVAP
 
@@ -117,7 +117,7 @@ public class Main {
 
 ## <p id = 'Ödev 3' > ÖDEV 3 - Üçgenin Hipotenüsü ve Alanı </p>
 
-### 1. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
+1. Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın.
 
 ### :red_square: CEVAP
 
@@ -147,9 +147,9 @@ public class Main {
 </details>
 <br>
 
-### 2. Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
+2. Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
 
-### FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
+FORMÜL: Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
 𝑢 = (a+b+c) / 2
 Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
 
@@ -191,11 +191,11 @@ public class Main {
 
 ## <p id = 'Ödev 4' > ÖDEV 4 - Taksimetre Programı </p>
 
-### 1. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
+1. Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
 
-### -> Taksimetre KM başına 2.20 TL tutmaktadır.
-### -> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
-### -> Taksimetre açılış ücreti 10 TL'dir.
+-> Taksimetre KM başına 2.20 TL tutmaktadır.
+-> Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
+-> Taksimetre açılış ücreti 10 TL'dir.
 
 ### :red_square: CEVAP
 
@@ -233,10 +233,10 @@ public class Main {
 
 ## <p id = 'Ödev 5' > ÖDEV 5 - Dairenin Alanını ve Çevresini Hesaplayan Program </p>
 
-### 1. Java ile yarı çapını kullanıcıdan aldığınız dairenin alanını ve çevresini hesaplayan programı yazın.
+1. Java ile yarı çapını kullanıcıdan aldığınız dairenin alanını ve çevresini hesaplayan programı yazın.
 
-### -> Alan Formülü : π * r * r;
-### -> Çevre Formülü : 2 * π * r;
+-> Alan Formülü : π * r * r;
+-> Çevre Formülü : 2 * π * r;
 
 ### :red_square: CEVAP
 
@@ -267,10 +267,10 @@ public class Main {
 </details>
 <br>
 
-### 2. Yarıçapı r, merkez açısısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
+2. Yarıçapı r, merkez açısısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
 
-### -> 𝜋 sayısını = 3.14 alınız.
-### -> Formül : (𝜋 * (r*r) * 𝛼) / 360
+-> 𝜋 sayısını = 3.14 alınız.
+-> Formül : (𝜋 * (r*r) * 𝛼) / 360
 
 ### :red_square: CEVAP
 
@@ -307,9 +307,9 @@ public class Main {
 
 ## <p id = 'Ödev 6' > ÖDEV 6 - Vücut Kitle İndeksi </p>
 
-### 1. Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın. Aşağıda ki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp ekrana yazdırın.
+1. Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın. Aşağıda ki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp ekrana yazdırın.
 
-### -> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
+-> FORMÜL: Kilo (kg) / Boy(m) * Boy(m)
 
 ### :red_square: CEVAP
 
@@ -344,9 +344,9 @@ public class Main {
 
 ## <p id = 'Ödev 7' > ÖDEV 7 - Manav Kasa Programı </p>
 
-### 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
+1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
 
-### -> Meyveler ve KG Fiyatları
+-> Meyveler ve KG Fiyatları
 - Armut : 2,14 TL
 - Elma : 3,67 TL
 - Domates : 1,11 TL
@@ -401,9 +401,9 @@ public class Main {
 
 ## <p id = 'Ödev 8' > ÖDEV 8 - Basit Hesap Makinesi </p>
 
-### 1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
+1. Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana yazdıran programı yazın.
 
-### -> Videodaki hesap makinesini switch-case kullanarak yapınız.
+-> Videodaki hesap makinesini switch-case kullanarak yapınız.
 
 ### :red_square: CEVAP
 
@@ -462,9 +462,9 @@ public class Main {
 
 ## <p id = 'Ödev 9' > ÖDEV 9 - Kullanıcı Girişi </p>
 
-### 1. Java koşullu ifadeler ile kullanıcı adı ve şifreyi kontrol eden program yapımı.
+1. Java koşullu ifadeler ile kullanıcı adı ve şifreyi kontrol eden program yapımı.
 
-### -> Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+-> Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
 
 ### :red_square: CEVAP
 
@@ -520,11 +520,12 @@ public class Main {
 
 ## <p id = 'Ödev 10' > ÖDEV 10 - Sınıf Geçme Durumu </p>
 
-### 1. Java koşullu ifadeler ile kullanıcının not durumuna göre sınıfı geçme durumunu hesaplayan program yapımı.
-### Dersler: Matematik, Fizik, Türkçe, Kimya, Müzik
-### Geçme Notu: 55
+1. Java koşullu ifadeler ile kullanıcının not durumuna göre sınıfı geçme durumunu hesaplayan program yapımı.
 
-### -> Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
+Dersler: Matematik, Fizik, Türkçe, Kimya, Müzik
+Geçme Notu: 55
+
+-> Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.
 
 ### :red_square: CEVAP
 
@@ -599,15 +600,15 @@ public class Main {
 
 ## <p id = 'Ödev 11' > ÖDEV 11 - Hava Sıcaklığına Göre Etkinlik Planlama </p>
 
-### 1. Java koşullu ifadeler ile hava sıcaklığına göre etkinlik öneren program yapımı.
+1. Java koşullu ifadeler ile hava sıcaklığına göre etkinlik öneren program yapımı.
 
-### -> Koşullar :
+-> Koşullar :
 - Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
 - Sıcaklık 5 ve 15 arasında ise "Sinema" etkinliğini öner.
 - Sıcaklık 15 ve 25 arasında ise "Piknik" etkinliğini öner.
 - Sıcaklık 25'ten büyük ise "Yüzme" etkinliğini öner.
 
-### -> Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
+-> Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
 
 ### :red_square: CEVAP
 
@@ -672,9 +673,9 @@ public class Main {
 
 ## <p id = 'Ödev 12' > ÖDEV 12 - Sayıları Küçükten Büyüğe Sıralama </p>
 
-### 1. Java koşullu ifadeler ile girilen 3 sayıyı büyükten küçüğe sıralayan program yapımı.
+1. Java koşullu ifadeler ile girilen 3 sayıyı büyükten küçüğe sıralayan program yapımı.
 
-### -> Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
+-> Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
 
 ### :red_square: CEVAP
 
@@ -754,7 +755,7 @@ public class Main {
 
 ## <p id = 'Ödev 13' > ÖDEV 13 - Burç Bulma Programı </p>
 
-### 1. Java koşullu ifadeler ile kullanıcının burcunu bulan program yapımı.
+1. Java koşullu ifadeler ile kullanıcının burcunu bulan program yapımı.
 
 - Koç Burcu : 21 Mart - 20 Nisan
 - Boğa Burcu : 21 Nisan - 21 Mayıs
@@ -769,7 +770,7 @@ public class Main {
 - Kova Burcu : 22 Ocak - 19 Şubat
 - Balık Burcu : 20 Şubat - 20 Mart
 
-### -> Aynı örneği switch-case kullanmadan yapınız.
+-> Aynı örneği switch-case kullanmadan yapınız.
 
 ### :red_square: CEVAP
 
@@ -1076,7 +1077,7 @@ public class Main {
 
 1. Java ile mesafeye ve şartlara göre uçak bileti fiyatı hesaplayan programı yapın. Kullanıcıdan Mesafe (KM), yaşı ve yolculuk tipi (Tek Yön, Gidiş-Dönüş) bilgilerini alın. Mesafe başına ücret 0,10 TL / km olarak alın. İlk olarak uçuşun toplam fiyatını hesaplayın ve sonrasında ki koşullara göre müşteriye aşağıdaki indirimleri uygulayın ;
 
-## -> Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır. Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
+-> Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır. Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
 
 - Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
 
@@ -1086,7 +1087,7 @@ public class Main {
 
 - Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %20 indirim uygulanır.
 
-### :red_square: CEVAP
+:red_square: CEVAP
 
 <details>
 <summary>Kodu görmek için tıklayınız.</summary>
