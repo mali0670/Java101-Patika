@@ -13,7 +13,8 @@
 <a href='#Ödev 11'>ÖDEV 11: Hava Sıcaklığına Göre Etkinlik Planlama</a><br>
 <a href='#Ödev 12'>ÖDEV 12: Sayıları Küçükten Büyüğe Sıralama</a><br>
 <a href='#Ödev 13'>ÖDEV 13: Burç Bulma Programı</a><br>
-<a href='#Ödev 14'>ÖDEV 14: Uçak Bilet Fiyatı Hesaplama</a><br><br><br>
+<a href='#Ödev 14'>ÖDEV 14: Uçak Bilet Fiyatı Hesaplama</a><br>
+<a href='#Ödev 15'>ÖDEV 15: Çin Zodyağı Hesaplama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1160,6 +1161,85 @@ public class Main {
                 System.out.println("Hatalı seçim yaptınız!");
         }
 
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 15' > ÖDEV 15 - Çin Zodyağı Hesaplama </p>
+
+1. Çin zodyağı hesaplanırken kişinin doğum yılının 12 ile bölümünde kalana göre bulunur.
+
+- Doğum Tarihi %12 = 0 ➜ Maymun
+- Doğum Tarihi %12 = 1 ➜ Horoz
+- Doğum Tarihi %12 = 2 ➜ Köpek
+- Doğum Tarihi %12 = 3 ➜ Domuz
+- Doğum Tarihi %12 = 4 ➜ Fare
+- Doğum Tarihi %12 = 5 ➜ Öküz
+- Doğum Tarihi %12 = 6 ➜ Kaplan
+- Doğum Tarihi %12 = 7 ➜ Tavşan
+- Doğum Tarihi %12 = 8 ➜ Ejderha
+- Doğum Tarihi %12 = 9 ➜ Yılan
+- Doğum Tarihi %12 = 10 ➜ At
+- Doğum Tarihi %12 = 11 ➜ Koyun
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Lütfen doğum yılınızı girin: ");
+        int year = scanner.nextInt();
+
+        double hesap = year%12;
+
+        if (hesap==0){
+            System.out.println("Çin zodyağı burcunuz: Maymun");
+        }
+        if (hesap==1){
+            System.out.println("Çin zodyağı burcunuz: Horoz");
+        }
+        if (hesap==2){
+            System.out.println("Çin zodyağı burcunuz: Köpek");
+        }
+        if (hesap==3){
+            System.out.println("Çin zodyağı burcunuz: Domuz");
+        }
+        if (hesap==4){
+            System.out.println("Çin zodyağı burcunuz: Fare");
+        }
+        if (hesap==5){
+            System.out.println("Çin zodyağı burcunuz: Öküz");
+        }
+        if (hesap==6){
+            System.out.println("Çin zodyağı burcunuz: Kaplan");
+        }
+        if (hesap==7){
+            System.out.println("Çin zodyağı burcunuz: Tavşan");
+        }
+        if (hesap==8){
+            System.out.println("Çin zodyağı burcunuz: Ejderha");
+        }
+        if (hesap==9){
+            System.out.println("Çin zodyağı burcunuz: Yılan");
+        }
+        if (hesap==10){
+            System.out.println("Çin zodyağı burcunuz: At");
+        }
+        if (hesap==11){
+            System.out.println("Çin zodyağı burcunuz: Koyun");
+        }
     }
 }
 ```
