@@ -14,7 +14,8 @@
 <a href='#Ödev 12'>ÖDEV 12: Sayıları Küçükten Büyüğe Sıralama</a><br>
 <a href='#Ödev 13'>ÖDEV 13: Burç Bulma Programı</a><br>
 <a href='#Ödev 14'>ÖDEV 14: Uçak Bilet Fiyatı Hesaplama</a><br>
-<a href='#Ödev 15'>ÖDEV 15: Çin Zodyağı Hesaplama</a><br><br><br>
+<a href='#Ödev 15'>ÖDEV 15: Çin Zodyağı Hesaplama</a><br>
+<a href='#Ödev 16'>ÖDEV 16: Artık Yıl Hesaplama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1240,6 +1241,70 @@ public class Main {
         if (hesap==11){
             System.out.println("Çin zodyağı burcunuz: Koyun");
         }
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 16' > ÖDEV 16 - Artık Yıl Hesaplama </p>
+
+1. Java ile kullanıcının girdiği yılın artık olup olmadığını bulan programı yazınız.
+
+:question: Artık yıl nedir?
+    -> Artık yıl, Miladî takvimde 365 yerine 366 günü olan yıl. Bu fazladan gün (artık gün), normalde 28 gün olan şubat ayına 29 Şubat’ın eklenmesi ile elde edilir.
+
+:question: Artık yıl nasıl hesaplanır?
+    -> Genel bir kural olarak, artık yıllar 4 rakamının katı olan yıllardır:
+- 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020, 2024 gibi.
+
+    -> 100'ün katı olan yıllardan sadece 400'e kalansız olarak bölünebilenler artık yıldır:
+- Örneğin 1200, 1600, 2000 yılları artık yıldır ancak 1700, 1800 ve 1900 artık yıl değildir.
+
+    -> Sadece 400'e tam olarak bölünebilenlerin artık yıl kabul edilmesinin nedeni, bir astronomik yılın 365,25 gün değil, yaklaşık olarak 365,242 gün olmasından kaynaklanan hatayı gidermektir.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int yil;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Lütfen yıl giriniz: ");
+        yil = scanner.nextInt();
+
+        double hesap1 = yil%4;
+        double hesap2 = yil%100;
+        double hesap3 = yil%400;
+
+        if (hesap1 == 0){
+            if (hesap2 == 0){
+                if (hesap3 == 0){
+                    System.out.println(yil + " artık yıldır");
+                }else {
+                    System.out.println(yil + " artık yıl değildir");
+                }
+            }else {
+                if (hesap1 == 0) {
+                    System.out.println(yil + " artık yıldır");
+                }else {
+                    System.out.println(yil + " artık yıl değildir");
+                }
+            }
+        }else {
+            System.out.println(yil + " artık yıl değildir");
+        }
+
     }
 }
 ```
