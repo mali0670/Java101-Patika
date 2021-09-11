@@ -15,7 +15,8 @@
 <a href='#Ödev 13'>ÖDEV 13: Burç Bulma Programı</a><br>
 <a href='#Ödev 14'>ÖDEV 14: Uçak Bilet Fiyatı Hesaplama</a><br>
 <a href='#Ödev 15'>ÖDEV 15: Çin Zodyağı Hesaplama</a><br>
-<a href='#Ödev 16'>ÖDEV 16: Artık Yıl Hesaplama</a><br><br><br>
+<a href='#Ödev 16'>ÖDEV 16: Artık Yıl Hesaplama</a><br>
+<a href='#Ödev 17'>ÖDEV 17: Girilen Sayıya Kadar Çift Sayıları Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1305,6 +1306,58 @@ public class Main {
             System.out.println(yil + " artık yıl değildir");
         }
 
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 17' > ÖDEV 17 - Girilen Sayıya Kadar Çift Sayıları Bulma </p>
+
+1. Java döngüler ile kullanıcının girdiği sayıya kadar çift olan sayıları bulan programı yazıyoruz.
+
+    -> Java döngüler ile 0'dan girilen sayıya kadar olan sayılardan 3 ve 4'e tam bölünen sayıların ortalamasını hesaplayan programı yazınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        // ÇİFT SAYILARI BULMA
+        int sayi;
+        System.out.print("Bir sayı girin: ");
+        sayi = scanner.nextInt();
+
+        for (int i=1; i<=sayi; i++){
+            if (i%2==0){
+                System.out.println(i);
+            }
+        }
+
+        // 3'e ve 4'e TAM BÖLÜNEN SAYILARIN ORTALAMASINI BULMA
+        int sayi;
+        int ortalama, toplam=0, bolen=0;
+        System.out.print("Bir sayı girin: ");
+        sayi = scanner.nextInt();
+
+        for (int i=1; i<=sayi; i++){
+            if (i%3==0 && i%4==0){
+                System.out.println("3'e ve 4'e tam bölünen sayı/sayılar: " + i);
+                toplam = toplam + i;
+                bolen++;
+            }
+        }
+            ortalama = toplam/bolen;
+            System.out.println("Ortalama: " + ortalama);
     }
 }
 ```
