@@ -16,7 +16,8 @@
 <a href='#Ödev 14'>ÖDEV 14: Uçak Bilet Fiyatı Hesaplama</a><br>
 <a href='#Ödev 15'>ÖDEV 15: Çin Zodyağı Hesaplama</a><br>
 <a href='#Ödev 16'>ÖDEV 16: Artık Yıl Hesaplama</a><br>
-<a href='#Ödev 17'>ÖDEV 17: Girilen Sayıya Kadar Çift Sayıları Bulma</a><br><br><br>
+<a href='#Ödev 17'>ÖDEV 17: Girilen Sayıya Kadar Çift Sayıları Bulma</a><br>
+<a href='#Ödev 18'>ÖDEV 18: Tek Sayıların Toplamını Bulan Program</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1358,6 +1359,57 @@ public class Main {
         }
             ortalama = toplam/bolen;
             System.out.println("Ortalama: " + ortalama);
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 18' > ÖDEV 18 - Tek Sayıların Toplamını Bulan Program </p>
+
+1. Java döngüler ile negatif bir değer girilene kadar kullanıcıdan girişleri kabul eden ve girilen değerlerden tek sayıları toplayıp ekrana basan programı yazıyoruz.
+
+2. Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve girilen değerlerden çift ve 4'ün katları olan sayıları toplayıp ekrana basan programı yazıyoruz.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        int toplam=0;
+
+        // TEK SAYILARIN TOPLAMINI BULMA
+        do {
+            System.out.print("Bir sayı girin: ");
+            sayi = scanner.nextInt();
+            if (sayi%2==1){
+                toplam = toplam + sayi;
+            }
+
+        }while (sayi>0);
+        System.out.println("Toplam: " + toplam);
+    }
+}
+        // ÇİFT ve 4'ün KATI OLAN SAYILARIN TOPLAMINI BULMA
+        do {
+            System.out.print("Bir sayı girin: ");
+            sayi = scanner.nextInt();
+            if (sayi%4==0 && sayi%2==0){
+                toplam = toplam + sayi;
+            }
+
+        }while (sayi%2==0);
+        System.out.println("Toplam: " + toplam);
     }
 }
 ```
