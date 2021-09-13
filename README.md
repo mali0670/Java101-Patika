@@ -17,7 +17,8 @@
 <a href='#Ödev 15'>ÖDEV 15: Çin Zodyağı Hesaplama</a><br>
 <a href='#Ödev 16'>ÖDEV 16: Artık Yıl Hesaplama</a><br>
 <a href='#Ödev 17'>ÖDEV 17: Girilen Sayıya Kadar Çift Sayıları Bulma</a><br>
-<a href='#Ödev 18'>ÖDEV 18: Tek Sayıların Toplamını Bulan Program</a><br><br><br>
+<a href='#Ödev 18'>ÖDEV 18: Tek Sayıların Toplamını Bulan Program</a><br>
+<a href='#Ödev 19'>ÖDEV 19: Girilen Sayının Kuvvetlerini Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1410,6 +1411,55 @@ public class Main {
 
         }while (sayi%2==0);
         System.out.println("Toplam: " + toplam);
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 19' > ÖDEV 19 - Girilen Sayının Kuvvetlerini Bulma </p>
+
+1. Java döngüler ile girilen sayıya kadar olan 2'nin kuvvetlerini ekrana yazdıran programı yazıyoruz.
+
+2. Java döngüler ile girilen sayıya kadar olan 4 ve 5'in kuvvetlerini ekrana yazdıran programı yazıyoruz.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        int us1=0, us2=0, us3=0;
+
+        // 2'nin KATLARINI BULMA
+        System.out.print("Bir sayı girin: ");
+        sayi = scanner.nextInt();
+
+        for (int i=1; i<=sayi; i *=2){
+            System.out.println(2 + "^" + us1 + "= " + i);
+            us1++;
+        }
+    }
+}
+
+        // 4 ve 5'in KATLARINI BULMA
+        for (int i=1; i<=sayi; i *=4){
+            System.out.println(4 + "^" + us2 + "= " + i);
+            us2++;
+        }
+        for (int i=1; i<=sayi; i *=5){
+            System.out.println(5 + "^" + us3 + "= " + i);
+            us3++;
+        }
     }
 }
 ```
