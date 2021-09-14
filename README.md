@@ -18,7 +18,8 @@
 <a href='#Ödev 16'>ÖDEV 16: Artık Yıl Hesaplama</a><br>
 <a href='#Ödev 17'>ÖDEV 17: Girilen Sayıya Kadar Çift Sayıları Bulma</a><br>
 <a href='#Ödev 18'>ÖDEV 18: Tek Sayıların Toplamını Bulan Program</a><br>
-<a href='#Ödev 19'>ÖDEV 19: Girilen Sayının Kuvvetlerini Bulma</a><br><br><br>
+<a href='#Ödev 19'>ÖDEV 19: Girilen Sayının Kuvvetlerini Bulma</a><br>
+<a href='#Ödev 20'>ÖDEV 20: Faktoriyel Hesaplama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1460,6 +1461,72 @@ public class Main {
             System.out.println(5 + "^" + us3 + "= " + i);
             us3++;
         }
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 20' > ÖDEV 20 - Faktoriyel Hesaplama </p>
+
+1. Java ile faktöriyel hesaplayan program yazıyoruz.
+
+2. N elemanlı bir kümenin elemanları ile oluşturulacak r elemanlı farklı grupların sayısı n’in r’li kombinasyonu olarak adlandırılır. N’in r’li kombinasyonu C(n,r) şeklinde gösterilir.
+
+    -> Java ile kombinasyon hesaplayan program yazınız.
+
+FORMÜL: C(n,r) = n! / (r! * (n-r)!)
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        int n;
+        int r;
+        int nf=1;
+        int rf=1;
+        int nr=1;
+        int kom;
+        int faktoriyel = 1;
+
+        // Faktoriyel Hesaplama
+        System.out.print("Bir sayı girin: ");
+        sayi = scanner.nextInt();
+
+        for (int i=1;i<=sayi;i++){
+            faktoriyel = faktoriyel * i;
+
+        }
+        System.out.println(sayi + "!= " + faktoriyel);
+
+        // Kombinasyon Hesaplama
+        System.out.print("n değeri: ");
+        n = scanner.nextInt();
+        System.out.print("r değeri: ");
+        r = scanner.nextInt();
+
+        for (int a=1; a<=n; a++){
+            nf = nf * a;
+        }
+        for (int b=1; b<=r; b++){
+            rf = rf * b;
+        }
+        for (int c=1; c<=n-r; c++){
+            nr = nr * c;
+        }
+        kom = nf/(rf * (nr));
+        System.out.println("C(" + n + "," + r + ")= " + kom);
     }
 }
 ```
