@@ -19,7 +19,8 @@
 <a href='#Ödev 17'>ÖDEV 17: Girilen Sayıya Kadar Çift Sayıları Bulma</a><br>
 <a href='#Ödev 18'>ÖDEV 18: Tek Sayıların Toplamını Bulan Program</a><br>
 <a href='#Ödev 19'>ÖDEV 19: Girilen Sayının Kuvvetlerini Bulma</a><br>
-<a href='#Ödev 20'>ÖDEV 20: Faktoriyel Hesaplama</a><br><br><br>
+<a href='#Ödev 20'>ÖDEV 20: Faktoriyel Hesaplama</a><br>
+<a href='#Ödev 21'>ÖDEV 21: Üslü Sayı Hesaplama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1527,6 +1528,43 @@ public class Main {
         }
         kom = nf/(rf * (nr));
         System.out.println("C(" + n + "," + r + ")= " + kom);
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 21' > ÖDEV 21 - Üslü Sayı Hesaplama </p>
+
+1. Java ile kullanıcının girdiği değerler ile üslü sayı hesaplayan programı yazıyoruz.
+
+    -> Java ile kullanıcının girdiği değerler ile üslü sayı hesaplayan programı "For Döngüsü" kullanarak yapınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int n,r;
+        int total=1;
+        System.out.print("Üssü alınacak sayı: ");
+        n = scanner.nextInt();
+        System.out.print("Kaçıncı üssü: ");
+        r = scanner.nextInt();
+
+        for (int i=1; i<=r; i++){
+            total = total * n;
+        }
+        System.out.println(n + "^" + r + "= " + total);
     }
 }
 ```
