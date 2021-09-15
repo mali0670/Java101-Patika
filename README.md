@@ -20,7 +20,8 @@
 <a href='#Ödev 18'>ÖDEV 18: Tek Sayıların Toplamını Bulan Program</a><br>
 <a href='#Ödev 19'>ÖDEV 19: Girilen Sayının Kuvvetlerini Bulma</a><br>
 <a href='#Ödev 20'>ÖDEV 20: Faktoriyel Hesaplama</a><br>
-<a href='#Ödev 21'>ÖDEV 21: Üslü Sayı Hesaplama</a><br><br><br>
+<a href='#Ödev 21'>ÖDEV 21: Üslü Sayı Hesaplama</a><br>
+<a href='#Ödev 22'>ÖDEV 22: Armstrong Sayısı Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1565,6 +1566,97 @@ public class Main {
             total = total * n;
         }
         System.out.println(n + "^" + r + "= " + total);
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 22' > ÖDEV 22 - Armstrong Sayısı Bulma </p>
+
+1. Java döngüler ile sayının armstrong sayı olup olmadığını bulan programı yazıyoruz.
+
+    -> Bir sayının basamak sayılarının toplamını hesaplayan program yazınız.
+
+ÖRNEK: 1643 = 1 + 6 + 4 + 3 = 14
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+
+        // ARMSTRONG SAYISINI BULMA
+        System.out.print("Sayıyı girin: ");
+        sayi = scanner.nextInt();
+
+        int geciciSayi=sayi;
+        int basSayisi=0;
+        int basDegeri;
+        int basUst=1;
+        int sonuc = 0;
+
+        while (geciciSayi!=0){
+            geciciSayi = geciciSayi / 10;
+            basSayisi++;
+        }
+
+        geciciSayi = sayi;
+        while (geciciSayi!=0){
+            basDegeri = geciciSayi % 10;
+
+            basUst=1;
+            for (int i=1; i<=basSayisi; i++){
+                basUst = basUst * basDegeri;
+            }
+            sonuc = sonuc + basUst;
+            geciciSayi = geciciSayi / 10;
+        }
+        if (sonuc==sayi){
+            System.out.println(sayi + " sayısı bir Armstrong sayısıdır.");
+        }else {
+            System.out.println(sayi + " sayısı bir Armstrong sayısı değildir.");
+        }
+
+        // BASAMAK SAYILARININ TOPLAMINI HESAPLAMA
+        int sayi2;
+        int basmkSay=0, hafizaSay;
+
+        System.out.print("Sayıyı girin: ");
+        sayi2 = scanner.nextInt();
+
+        hafizaSay=sayi2;
+
+        for (int a=0;sayi2!=0;a++){
+            sayi2 = sayi2 / 10;
+            basmkSay++;
+        }
+
+        sayi2=hafizaSay;
+        int basmkMod, basmkDeger;
+        int mod2=10, bolum2=1, sonuc2=0;
+
+        for (int b=1; b<=basmkSay; b++){
+            basmkMod = sayi2 % mod2;
+            basmkDeger = basmkMod / bolum2;
+            mod2 *= 10;
+            bolum2 *= 10;
+
+            sonuc2 = sonuc2 + basmkDeger;
+        }
+        System.out.println(sonuc2);
+    }
+}
     }
 }
 ```
