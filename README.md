@@ -21,7 +21,8 @@
 <a href='#Ödev 19'>ÖDEV 19: Girilen Sayının Kuvvetlerini Bulma</a><br>
 <a href='#Ödev 20'>ÖDEV 20: Faktoriyel Hesaplama</a><br>
 <a href='#Ödev 21'>ÖDEV 21: Üslü Sayı Hesaplama</a><br>
-<a href='#Ödev 22'>ÖDEV 22: Armstrong Sayısı Bulma</a><br><br><br>
+<a href='#Ödev 22'>ÖDEV 22: Armstrong Sayısı Bulma</a><br>
+<a href='#Ödev 23'>ÖDEV 23: Harmonik Seri Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1657,6 +1658,42 @@ public class Main {
         System.out.println(sonuc2);
     }
 }
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 23' > ÖDEV 23 - Harmonik Seri Bulma </p>
+
+1. Java ile girilen sayının harmonik serisini bulan program yazacağız.
+
+ÖRNEK: 1643 = 1 + 6 + 4 + 3 = 14
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        double result=0;
+
+        System.out.print("N sayısını girin: ");
+        sayi = scanner.nextInt();
+
+        for (double i=1;i<=sayi;i++){
+            result = result + (1/i);
+        }
+        System.out.println(result);
     }
 }
 ```
