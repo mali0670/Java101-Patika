@@ -22,7 +22,8 @@
 <a href='#Ödev 20'>ÖDEV 20: Faktoriyel Hesaplama</a><br>
 <a href='#Ödev 21'>ÖDEV 21: Üslü Sayı Hesaplama</a><br>
 <a href='#Ödev 22'>ÖDEV 22: Armstrong Sayısı Bulma</a><br>
-<a href='#Ödev 23'>ÖDEV 23: Harmonik Seri Bulma</a><br><br><br>
+<a href='#Ödev 23'>ÖDEV 23: Harmonik Seri Bulma</a><br>
+<a href='#Ödev 24'>ÖDEV 24: Yıldız İle Üçgen Yapımı</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1670,8 +1671,6 @@ public class Main {
 
 1. Java ile girilen sayının harmonik serisini bulan program yazacağız.
 
-ÖRNEK: 1643 = 1 + 6 + 4 + 3 = 14
-
 ### :red_square: CEVAP
 
 <details>
@@ -1694,6 +1693,55 @@ public class Main {
             result = result + (1/i);
         }
         System.out.println(result);
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 24' > ÖDEV 24 - Yıldız İle Üçgen Yapımı </p>
+
+1. Java ile girilen sayının harmonik serisini bulan program yazacağız.
+
+    -> Java'da döngüler kullanarak yıldızlar ile elmas yapınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        // YILDIZLAR İLE ÜÇGEN YAPIMI
+        System.out.print("Basamak sayısını girin: ");
+        int bas = scanner.nextInt();
+
+        for (int i=1; i<=bas; i++){
+            for (int j=1; j<=(bas-i); j++){
+                System.out.print(" ");
+            }
+            for (int k=1; k<=(2*i)-1; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // YILDIZLAR İLE ELMAS YAPIMI
+        for (int a=1; a<=bas; a++){
+            for (int b=1; b<=a; b++){
+                System.out.print(" ");
+            }
+            for (int c=1; c<=(2*bas)-(2*a)-1; c++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
     }
 }
 ```
