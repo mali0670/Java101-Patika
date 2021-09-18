@@ -23,7 +23,8 @@
 <a href='#Ödev 21'>ÖDEV 21: Üslü Sayı Hesaplama</a><br>
 <a href='#Ödev 22'>ÖDEV 22: Armstrong Sayısı Bulma</a><br>
 <a href='#Ödev 23'>ÖDEV 23: Harmonik Seri Bulma</a><br>
-<a href='#Ödev 24'>ÖDEV 24: Yıldız İle Üçgen Yapımı</a><br><br><br>
+<a href='#Ödev 24'>ÖDEV 24: Yıldız İle Üçgen Yapımı</a><br>
+<a href='#Ödev 25'>ÖDEV 25: ATM Projesi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1741,6 +1742,133 @@ public class Main {
                 System.out.print("*");
             }
             System.out.println("");
+        }
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 25' > ÖDEV 25 - ATM Projesi </p>
+
+1. Java döngüler ile kullanıcının banka hesabını yönetebildiği bir ATM projesi yapıyoruz.
+
+    -> Aynı projedeki ATM işlemlerini "Switch-Case" kullanarak yapınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int bakiye=2000;
+        int hak = 3;
+        int secim;
+        String kullaniciAdi;
+        String sifre;
+
+        System.out.println("Patika Bankası'na Hoşgeldiniz:)");
+        System.out.println("*********************************************");
+
+        while (true){
+
+            System.out.print("Lütfen kullanıcı adınızı girin: ");
+            kullaniciAdi = scanner.nextLine();
+
+            System.out.print("Lütfen şifrenizi girin: ");
+            sifre = scanner.nextLine();
+
+            if (kullaniciAdi.equals("patika") && sifre.equals("1234")){
+                System.out.println("Giriş başarılı");
+
+                System.out.println("*********************************************");
+                System.out.println("Yapmak istediğiniz işlemi seçiniz:\n" +
+                        "1- Para çekme,\n" +
+                        "2- Para yatırma,\n" +
+                        "3- Bakiye sorgulama\n" +
+                        "4- Çıkış");
+                secim = scanner.nextInt();
+
+                System.out.println("*********************************************");
+
+                    do {
+                        switch (secim) {
+                            case 1:
+                                System.out.println("Çekmek istediğiniz tutarı girin: ");
+                                int cekilenTutar = scanner.nextInt();
+                                if (cekilenTutar>bakiye){
+                                    System.out.println("Yetersiz bakiye");
+                                }
+                                else {
+                                    bakiye = bakiye - cekilenTutar;
+                                    System.out.println("Yeni bakiyeniz: " + bakiye);
+                                }
+                                System.out.println("Yapmak istediğiniz işlemi seçiniz:\n" +
+                                        "1- Para çekme,\n" +
+                                        "2- Para yatırma,\n" +
+                                        "3- Bakiye sorgulama\n" +
+                                        "4- Çıkış");
+                                secim = scanner.nextInt();
+                                break;
+
+                            case 2:
+                                System.out.println("Yatırmak istediğiniz tutarı girin: ");
+                                int yatirilanTutar = scanner.nextInt();
+                                bakiye = bakiye + yatirilanTutar;
+                                System.out.println("Yeni bakiyeniz: " + bakiye);
+                                System.out.println("Yapmak istediğiniz işlemi seçiniz:\n" +
+                                        "1- Para çekme,\n" +
+                                        "2- Para yatırma,\n" +
+                                        "3- Bakiye sorgulama\n" +
+                                        "4- Çıkış");
+                                secim = scanner.nextInt();
+                                break;
+
+                            case 3:
+                                System.out.println("Bakiyeniz: " + bakiye);
+                                System.out.println("Yapmak istediğiniz işlemi seçiniz:\n" +
+                                        "1- Para çekme,\n" +
+                                        "2- Para yatırma,\n" +
+                                        "3- Bakiye sorgulama\n" +
+                                        "4- Çıkış");
+                                secim = scanner.nextInt();
+                                break;
+
+                            case 4:
+                                break;
+
+                            default:
+                                System.out.println("Hatalı seçim yaptınız!\n");
+                                System.out.println("Yapmak istediğiniz işlemi seçiniz:\n" +
+                                        "1- Para çekme,\n" +
+                                        "2- Para yatırma,\n" +
+                                        "3- Bakiye sorgulama\n" +
+                                        "4- Çıkış");
+                                secim = scanner.nextInt();
+                        }
+                    }
+                    while (secim!=4);
+                System.out.println("Çıkış başarılı");
+                break;
+            }
+            else {
+                System.out.println("Hatalı kullanıcı adı ya da şifre.");
+                hak--;
+                System.out.println("Kalan hakkınız: " + hak);
+                if (hak==0){
+                    System.out.println("Sistemden çıkılıyor...");
+                    break;
+                }
+            }
         }
     }
 }
