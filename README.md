@@ -28,7 +28,8 @@
 <a href='#Ödev 26'>ÖDEV 26: EBOB - EKOK Bulma</a><br>
 <a href='#Ödev 27'>ÖDEV 27: Girilen Sayıdan Min ve Max Değeri Bulma</a><br>
 <a href='#Ödev 28'>ÖDEV 28: Mükemmel Sayı Bulma</a><br>
-<a href='#Ödev 29'>ÖDEV 29: Yıldızlar ile Ters Üçgen Yapımı</a><br><br><br>
+<a href='#Ödev 29'>ÖDEV 29: Yıldızlar ile Ters Üçgen Yapımı</a><br>
+<a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2065,6 +2066,49 @@ public class Main {
             System.out.println("");
         }
 
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 30' > ÖDEV 30 - Asal Sayı Bulma </p>
+
+1. Java ile 1 - 100 arasındaki asal sayıları ekrana yazdıran programı yazınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int sayac=0;
+
+        for (int i=1;i<=100;i++){
+
+            for (int y=1;y<=i;y++){
+                if (i%y==0){
+                    sayac++;
+                }
+
+            }
+            if (sayac==2){
+                System.out.println(i);
+                sayac=0;
+            }
+            else {
+                sayac=0;
+            }
+        }
     }
 }
 ```
