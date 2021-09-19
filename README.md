@@ -25,7 +25,8 @@
 <a href='#Ödev 23'>ÖDEV 23: Harmonik Seri Bulma</a><br>
 <a href='#Ödev 24'>ÖDEV 24: Yıldız İle Üçgen Yapımı</a><br>
 <a href='#Ödev 25'>ÖDEV 25: ATM Projesi</a><br>
-<a href='#Ödev 26'>ÖDEV 26: EBOB - EKOK Bulma</a><br><br><br>
+<a href='#Ödev 26'>ÖDEV 26: EBOB - EKOK Bulma</a><br>
+<a href='#Ödev 27'>ÖDEV 27: Girilen Sayıdan Min ve Max Değeri Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -1927,6 +1928,57 @@ public class Main {
             b++;
         }
         System.out.println("EKOK: " + ekok);
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 27' > ÖDEV 27 - Girilen Sayıdan Min ve Max Değeri Bulma </p>
+
+1. Java ile klavyeden girilen N tane sayma sayısından en büyük ve en küçük sayıları bulan ve bu sayıları ekrana yazan programı yazın.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int sayi;
+        int kucukSayi=0;
+        int buyukSayi=0;
+
+        System.out.print("Kaç tane sayı gireceksin? ");
+        int kacSayi = scanner.nextInt();
+
+        for (int i=1;i<=kacSayi;i++){
+            System.out.print(i + ". sayıyı gir: ");
+            sayi = scanner.nextInt();
+
+            if(sayi==1){
+                kucukSayi=sayi;
+                buyukSayi=sayi;
+            }
+
+            if (sayi>buyukSayi){
+                buyukSayi=sayi;
+            }
+            if (sayi<kucukSayi){
+                kucukSayi=sayi;
+            }
+        }
+        System.out.println("En büyük sayı: " + buyukSayi);
+        System.out.println("En küçük sayı: " + kucukSayi);
+
     }
 }
 ```
