@@ -29,7 +29,8 @@
 <a href='#Ödev 27'>ÖDEV 27: Girilen Sayıdan Min ve Max Değeri Bulma</a><br>
 <a href='#Ödev 28'>ÖDEV 28: Mükemmel Sayı Bulma</a><br>
 <a href='#Ödev 29'>ÖDEV 29: Yıldızlar ile Ters Üçgen Yapımı</a><br>
-<a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br><br><br>
+<a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br>
+<a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2109,6 +2110,47 @@ public class Main {
                 sayac=0;
             }
         }
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 31' > ÖDEV 31 - Fibonacci Dizisi </p>
+
+1. Java döngüler ile fibonacci serisi bulan program yazıyoruz. Fibonacci serisinin eleman sayısını kullanıcıdan alın.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int toplam;
+        int sayi1=0;
+        int sayi2=1;
+
+        System.out.print("Eleman sayısı: ");
+        int eleman = scanner.nextInt();
+
+        System.out.print(sayi1 + " " + sayi2);
+
+        for (int i=2;i<=eleman;i++){
+            toplam = sayi1 + sayi2;
+            System.out.print(" " + toplam);
+            sayi1=sayi2;
+            sayi2=toplam;
+        }
+        System.out.println("");
     }
 }
 ```
