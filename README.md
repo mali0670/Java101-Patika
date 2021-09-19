@@ -27,7 +27,8 @@
 <a href='#Ödev 25'>ÖDEV 25: ATM Projesi</a><br>
 <a href='#Ödev 26'>ÖDEV 26: EBOB - EKOK Bulma</a><br>
 <a href='#Ödev 27'>ÖDEV 27: Girilen Sayıdan Min ve Max Değeri Bulma</a><br>
-<a href='#Ödev 28'>ÖDEV 28: Mükemmel Sayı Bulma</a><br><br><br>
+<a href='#Ödev 28'>ÖDEV 28: Mükemmel Sayı Bulma</a><br>
+<a href='#Ödev 29'>ÖDEV 29: Yıldızlar ile Ters Üçgen Yapımı</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2024,6 +2025,44 @@ public class Main {
         }
         else {
             System.out.println(sayi + " mükemmel sayı değildir.");
+        }
+
+    }
+}
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 29' > ÖDEV 29 - Yıldızlar ile Ters Üçgen Yapımı </p>
+
+1. Java ile basamak sayısının kullanıcıdan alınan ve döngüler kullanılarak, yıldızlar(*) ile ekrana ters üçgen çizen programı yazın.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Basamak sayısını girin: ");
+        int basamak = scanner.nextInt();
+
+        for (int a=1;a<=basamak;a++){
+            for (int b=1;b<=a;b++){
+                System.out.print(" ");
+            }
+            for (int c=1;c<=((2*basamak)-(2*a)+1);c++){
+                System.out.print("*");
+            }
+            System.out.println("");
         }
 
     }
