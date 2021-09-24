@@ -30,7 +30,8 @@
 <a href='#Ödev 28'>ÖDEV 28: Mükemmel Sayı Bulma</a><br>
 <a href='#Ödev 29'>ÖDEV 29: Yıldızlar ile Ters Üçgen Yapımı</a><br>
 <a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br>
-<a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br><br><br>
+<a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br>
+<a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2153,6 +2154,50 @@ public class Main {
         System.out.println("");
     }
 }
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 32' > ÖDEV 32 - Polindrom Sayılar </p>
+
+1. Java ile bir sayının "Palindrom Sayı" olup olmadığını bulan bir program yapıyoruz.
+
+Polindrom Sayı Nedir?
+    -> Palindromik sayı, iki taraftan okunduğu zaman okunuş yönüyle aynı olan sayılardır.
+
+Örnek: 1, 4, 8, 99, 101, 363, 4004, 9889....
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+public class Main {
+
+    static boolean isPalindrom(int num){
+        int temp= num, reverseNumber=0;
+        int lastNumber;
+
+        while (temp!=0){
+            lastNumber = temp % 10;
+            reverseNumber = (reverseNumber * 10) + lastNumber;
+            temp = temp / 10;
+        }
+        if (num == reverseNumber){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public static void main(String[] args){
+
+        System.out.println(isPalindrom(9889));
+    }
+    }
 ```
 </details>
 <br>
