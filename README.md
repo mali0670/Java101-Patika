@@ -32,6 +32,7 @@
 <a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br>
 <a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br>
 <a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br>
+<a href='#Ödev 33'>ÖDEV 33: Gelişmiş Hesap Makinesi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2196,6 +2197,170 @@ public class Main {
     public static void main(String[] args){
 
         System.out.println(isPalindrom(9889));
+    }
+    }
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 33' > ÖDEV 33 - Gelişmiş Hesap Makinesi </p>
+
+1. Java ile kullanıcın seçtiği işlemleri yapan hesap makinesi yapıyoruz.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    static void toplama(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Birinci sayıyı girin: ");
+        double a = scanner.nextInt();
+        System.out.print("İkinci sayıyı girin: ");
+        double b=scanner.nextInt();
+        double toplam = a + b;
+        System.out.println("Toplam sonucu: " + toplam);
+    }
+
+    static void cikarma(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Birinci sayıyı girin: ");
+        double a = scanner.nextInt();
+        System.out.print("Birinci sayıyı girin: ");
+        double b = scanner.nextInt();
+        double fark = a - b;
+        System.out.println("Fark: " + fark);
+    }
+
+    static void carpma(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Birinci sayıyı girin: ");
+        double a = scanner.nextInt();
+        System.out.print("Birinci sayıyı girin: ");
+        double b = scanner.nextInt();
+        double carpim = a * b;
+        System.out.println("Çarpım sonucu: " + carpim);
+    }
+
+    static void bolme(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Birinci sayıyı girin: ");
+        double a = scanner.nextInt();
+        System.out.print("Birinci sayıyı girin: ");
+        double b = scanner.nextInt();
+        double bolum = a / b;
+        System.out.println("Bölme sonucu: " + bolum);
+        if (b == 0){
+            System.out.println("Bölüm 0 olamaz!");
+        }
+    }
+
+    static void uslu(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Taban sayısını girin: ");
+        int taban = scanner.nextInt();
+        System.out.print("Üs sayısını girin: ");
+        int usSayisi = scanner.nextInt();
+        int us=1;
+        for (int i=1; i<=usSayisi; i++){
+            us = us * taban;
+        }
+        System.out.println("Üslü sayı sonucu: " + us);
+    }
+
+    static void faktoriyel(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int a = scanner.nextInt();
+        int fakt = 1;
+        for (int i=1; i<=a; i++){
+            fakt = fakt * i;
+        }
+        System.out.println("Faktoriyel sonucu: " + fakt);
+    }
+
+    static void mod(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Birinci sayıyı girin: ");
+        int a = scanner.nextInt();
+        System.out.print("Birinci sayıyı girin: ");
+        int b = scanner.nextInt();
+        int modSonuc = a % b;
+        System.out.println("Sayıların modu: " + modSonuc);
+    }
+
+    static void dikdortgen(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Kısa kenarı girin: ");
+        double kisa = scanner.nextInt();
+        System.out.print("Uzun kenarı girin: ");
+        double uzun = scanner.nextInt();
+
+        double alan = kisa * uzun;
+        double cevre = 2 * (kisa + uzun);
+        System.out.println("Dikdörtgenin alanı: " + alan + "\nDikdörtgenin çevresi: " + cevre);
+    }
+
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        String menu = "Yapmak istediğiniz işlemi seçin: \n" +
+                            "1- Toplama işlemi\n" +
+                            "2- Çıkarma işlemi\n" +
+                            "3- Çarpma işlemi\n" +
+                            "4- Bölme işlemi\n" +
+                            "5- Üslü sayı hesaplama\n" +
+                            "6- Faktoriyel hesaplama\n" +
+                            "7- Mod alma\n" +
+                            "8- Dikdörtgen alan ve çevre hesabı\n" +
+                            "9- Çıkış";
+
+        while (true){
+            System.out.println(menu);
+            System.out.print("Yapmak istediğiniz işlemi seçin: ");
+            int secim = scanner.nextInt();
+            if (secim == 9){
+                break;
+            }
+
+            switch (secim){
+                case 1:
+                    toplama();
+                    break;
+                case 2:
+                    cikarma();
+                    break;
+                case 3:
+                    carpma();
+                    break;
+                case 4:
+                    bolme();
+                    break;
+                case 5:
+                    uslu();
+                    break;
+                case 6:
+                    faktoriyel();
+                    break;
+                case 7:
+                    mod();
+                    break;
+                case 8:
+                    dikdortgen();
+                    break;
+                default:
+                    System.out.println("Hatalı seçim yaptınız!");
+                    break;
+            }
+        }
     }
     }
 ```
