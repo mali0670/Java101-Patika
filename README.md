@@ -31,7 +31,8 @@
 <a href='#Ödev 29'>ÖDEV 29: Yıldızlar ile Ters Üçgen Yapımı</a><br>
 <a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br>
 <a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br>
-<a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br><br><br>
+<a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br>
+<a href='#Ödev 33'>ÖDEV 33: Recursive ile Fibonacci Serisi</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2197,6 +2198,37 @@ public class Main {
 
         System.out.println(isPalindrom(9889));
     }
+    }
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 33' > ÖDEV 33 - Recursive ile Fibonacci Serisi </p>
+
+1. Java'da recursive metotlar ile fibonacci serisi bulan program yapıyoruz.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+public class Main {
+
+    static int fib(int n){
+        if (n==1 || n==2){
+            return 1;
+        }
+        return fib(n-1) + fib(n-2);
+    }
+
+    public static void main(String[] args){
+
+        System.out.println(fib(6));
+    }
+
     }
 ```
 </details>
