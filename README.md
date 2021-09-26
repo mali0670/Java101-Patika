@@ -33,7 +33,8 @@
 <a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br>
 <a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br>
 <a href='#Ödev 33'>ÖDEV 33: Gelişmiş Hesap Makinesi</a><br>
-<a href='#Ödev 34'>ÖDEV 34: Recursive Metodlar ile Üslü sayı Hesaplama</a><br><br><br>
+<a href='#Ödev 34'>ÖDEV 34: Recursive Metodlar ile Üslü Sayı Hesaplama</a><br>
+<a href='#Ödev 35'>ÖDEV 35: Recursive Metodlar ile Asal Sayı Bulma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2402,6 +2403,52 @@ public class Main {
     public static void main(String[] args){
 
         usHesapla();
+    }
+
+    }
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 35' > ÖDEV 35 - Recursive Metodlar ile Asal Sayı Bulma </p>
+
+1. Java dilinde "Recursive" metot kullanarak, kullanıcıdan alınan sayının "Asal" sayı olup olmadığını bulan programı yazın.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    static int asalSayi(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Sayı girin: ");
+        int sayi = scanner.nextInt();
+
+        int sayac = 0;
+        for (int i=1;i<=sayi;i++) {
+            if (sayi % i == 0) {
+                sayac++;
+            }
+        }
+            if (sayac==2){
+                System.out.println(sayi + " asal sayıdır");
+            }
+            else {
+                System.out.println(sayi + " asal sayı değildir");
+            }
+        return 1;
+    }
+
+    public static void main(String[] args){
+
+        asalSayi();
     }
 
     }
