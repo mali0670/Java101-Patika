@@ -34,7 +34,8 @@
 <a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br>
 <a href='#Ödev 33'>ÖDEV 33: Gelişmiş Hesap Makinesi</a><br>
 <a href='#Ödev 34'>ÖDEV 34: Recursive Metodlar ile Üslü Sayı Hesaplama</a><br>
-<a href='#Ödev 35'>ÖDEV 35: Recursive Metodlar ile Asal Sayı Bulma</a><br><br><br>
+<a href='#Ödev 35'>ÖDEV 35: Recursive Metodlar ile Asal Sayı Bulma</a><br>
+<a href='#Ödev 36'>ÖDEV 36: Desene Göre Metod Oluşturma</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2449,6 +2450,63 @@ public class Main {
     public static void main(String[] args){
 
         asalSayi();
+    }
+
+    }
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 36' > ÖDEV 36 - Desene Göre Metod Oluşturma </p>
+
+1. Java dilinde kullanıcıdan alınan n değerine göre aşağıdaki kurala uyan döngü kullanmadan bir "Recursive" metot yazın.
+
+Kural : Girilen sayı 0 veya negatif olduğu yere kadar girilen sayıdan 5 rakamını çıkarın. Her çıkarma işlemi sırasında ekrana son değeri yazdırın. Sayı negatif veya 0 olduktan sonra tekrar 5 ekleyin. Yine her ekleme işleminde sayının son değerini ekrana yazdırın.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    static int desen(int n, boolean deger, int sayac){
+
+        if (deger){
+            if (n>0){
+                System.out.print(n + " ");
+                sayac++;
+                return desen(n-5,true,sayac);
+            }
+            else {
+                return desen(n, false, sayac);
+            }
+        }
+        else {
+            System.out.print(n + " ");
+            if (sayac>0){
+                sayac--;
+                return desen(n+5, false, sayac);
+            }
+            else {
+                return 0;
+            }
+        }
+    }
+
+    public static void main(String[] args){
+
+    Scanner scanner = new Scanner(System.in);
+        System.out.print("N sayısı: ");
+        int n = scanner.nextInt();
+
+        System.out.print("Sonuç: ");
+        desen(n, true, 0);
     }
 
     }
