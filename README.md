@@ -32,7 +32,8 @@
 <a href='#Ödev 30'>ÖDEV 30: Asal Sayı Bulma</a><br>
 <a href='#Ödev 31'>ÖDEV 31: Fibonacci Dizisi</a><br>
 <a href='#Ödev 32'>ÖDEV 32: Polindrom Sayılar</a><br>
-<a href='#Ödev 33'>ÖDEV 33: Gelişmiş Hesap Makinesi</a><br><br><br>
+<a href='#Ödev 33'>ÖDEV 33: Gelişmiş Hesap Makinesi</a><br>
+<a href='#Ödev 34'>ÖDEV 34: Recursive Metodlar ile Üslü sayı Hesaplama</a><br><br><br>
 
 ## <p id = 'Ödev 1' > ÖDEV 1 - Not Ortalaması </p>
 
@@ -2362,6 +2363,47 @@ public class Main {
             }
         }
     }
+    }
+```
+</details>
+<br>
+
+----------------------------------------------------------------------------------------------------
+
+## <p id = 'Ödev 34' > ÖDEV 34 - Recursive Metodlar ile Üslü sayı Hesaplama </p>
+
+1. Java dilinde, taban ve üs değerleri kullanıcıdan alınan üs alma işlemini "Recursive" metot kullanarak yapan programı yazınız.
+
+### :red_square: CEVAP
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    static int usHesapla(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Taban değerini girin: ");
+        int taban = scanner.nextInt();
+        System.out.print("Üs değerini girin: ");
+        int us = scanner.nextInt();
+
+        int deger = 1;
+        for (int i=1;i<=us;i++){
+            deger = deger * taban;
+        }
+        System.out.println(taban + "^" + us + "= " + deger);
+        return deger;
+    }
+
+    public static void main(String[] args){
+
+        usHesapla();
+    }
+
     }
 ```
 </details>
